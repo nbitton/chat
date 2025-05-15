@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#messageContainer {
+    display: none;
+    width: 400px;
+    max-width: 90%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+#loginForm {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#nameInput {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #25d366;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+#nameInput:focus {
+    border-color: #1ebe57;
+    box-shadow: 0 0 8px rgba(37, 211, 102, 0.7);
+}
+
+#loginForm button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#loginForm button:hover {
+    background-color: #1ebe57;
+}
+
+#messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5ddd5;
+    height: 100%;
+    max-height: 400px; 
+}
+
+#messageForm {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#msgInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+#messageForm button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#messageForm button:hover {
+    background-color: #1ebe57;
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+    margin-bottom: 6px;
+}
+
+.message.user {
+    background-color: #25d366;
+    color: white;
+    align-self: flex-end;
+}
+
+.message.other {
+    background-color: white;
+    align-self: flex-start;
+    border: 1px solid #ccc;
+}
+
+.system-message {
+    text-align: center;
+    font-size: 0.9em;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 10px;
+}
